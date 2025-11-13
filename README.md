@@ -9,4 +9,4 @@ Doelen:
 - Inzicht hebben in benodige resources
 
 
-In project vind je de door de deelnemers opgeleverde producten. 
+In dit project vind je de door de deelnemers opgeleverde producten. 
