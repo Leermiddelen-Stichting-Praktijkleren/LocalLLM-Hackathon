@@ -1,7 +1,7 @@
 # Local LLM-Hackaton
 Uitkomsten Hackaton 6 november 2025
 
-Challenge: Maak een Werkende leertool voor Software Development-studenten. Hiermee gaan ze zelf aan de slag met een lokaal Large Language Model (LLM)
+Challenge: Maak een Werkende leertool voor Software Development-studenten. Hiermee gaan ze zelf aan de slag met een lokaal Large Language Model (LLM).
 
 Doelen:
 - Begrijpen hoe een LLM werkt, niet alleen gebruiken
