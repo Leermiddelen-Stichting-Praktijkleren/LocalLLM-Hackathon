@@ -1,0 +1,89 @@
+<!-- markdownlint-disable-file MD013 -->
+
+# Starter course about AI for technical students - The "Stairway" of Tools
+
+## Part 1: The Tooling & Pedagogical Path
+
+Your goal is a "gentle learning curve" that starts with magic and ends with empowerment. The key is to provide a series of platforms, each a small step up in complexity and power, that all run on the same local infrastructure.
+
+### Step 1: The Magical Toy (LM Studio)
+
+- Why it's perfect for the start: It has the slickest "click-to-install" UI of the bunch. Students can download it, search for a popular model like Qwen3-30B-A3B-Instruct-2507-GGUF, Ministral-8B-Instruct-2410 or gpt-oss-20b-GGUF, and be chatting with a local AI in minutes. It feels like a finished, polished app. This provides the crucial "wow" factor with zero friction.
+- The Gentle Introduction to Tinkering: It exposes key parameters like Temperature, Top-P, and system prompts in a simple UI. The first lesson can be: "Turn the temperature all the way down and ask it a creative question. Now turn it all the way up and ask the same. What changed?" This teaches a core concept without any code.
+- Hardware: Emphasize that this runs on their machines (or a modest classroom computer). A modern gaming PC or an Apple Silicon Mac with 16GB+ RAM is more than enough. This makes the technology tangible and owned by them, not some distant cloud.
+
+### Step 2: The Tinkerer's Workbench (text-generation-webui / Oobabooga)
+
+- Why it's the next logical step: Once they're hooked, introduce this. It shows there's a more powerful, extensible, open-source world. It's still browser-based and relatively easy to launch (e.g., using one-click.bat on Windows), but it introduces concepts like model loaders, extensions, and fine-tuning tabs.
+- The Creative Spark: The "Extensions" tab is a goldmine. Show them the "character" or "story" extensions. Suddenly, the LLM isn't just a chatbot; it's a role-playing engine. This ignites creativity. You can say, "See? People are building new things on top of this core technology. You can too."
+
+### Step 3: The Gateway to Integration (The Local API)
+
+- The Big Reveal: This is the most critical step in moving from "user" to "developer." Both LM Studio and Oobabooga have a simple checkbox to "Enable Server". With it on, the LLM is no longer just a chat interface; it's a local service running on `http://localhost:1234`.
+- The First Real "Coding" Task: Give them a tool like [Bruno](https://www.usebruno.com/) (a GUI for making API requests) or a simple Python script using the requests library. The assignment: "Using your local LLM server, build a simple application that takes a topic as input and prints a three-sentence summary."
+- This single act demystifies APIs. The black box is now a service they control with a simple text request. They can see the JSON payload, the prompt, and the response. It's transparent.
+
+## Part 2: Project Topics for SMB Internships
+
+The key for SMBs is to find high-impact, low-complexity projects. These aren't about building complex AI systems; they are about using the LLM as a "super-powered assistant" to augment existing workflows. The students should frame their projects as solving a specific business problem.
+
+Here are some topics categorized by business function. The deliverable for each should be a documented process or a simple script.
+
+### Category A: Marketing & Communications
+
+#### 1 Social Media Content Multiplier
+
+- Problem: The business owner is too busy to post consistently on social media.
+- Solution: The student creates a "master prompt." The business owner just needs to provide a single topic (e.g., "We just got a new shipment of artisanal coffee beans"). The student's script or process sends this to the LLM with instructions to generate 5 variations of a social media post with different tones (professional, funny, inquisitive, etc.), complete with relevant hashtags.
+- Value: Turns a 15-minute task into a 2-minute task.
+
+#### 2 Customer Persona Simulator
+
+- Problem: The marketing team wants to ensure their new product description resonates with different target customers.
+- Solution: The student fine-tunes a set of prompts that make the LLM act as different personas (e.g., "You are a budget-conscious college student," "You are a tech-savvy professional"). They then feed the product description to each persona and ask for feedback. "Would you buy this? Why or why not? What questions do you have?"
+- Value: Provides instant, zero-cost market research and feedback.
+
+### Category B: Operations & Administration
+
+#### 3 Internal "Guru" Bot for Process Documentation
+
+- Problem: New employees always ask the same questions about internal processes (e.g., "How do I request a day off?", "What's the process for expensing a client lunch?").
+- Solution: The student collects the messy, existing documentation (emails, Word docs, etc.). They create a system where a user can ask a natural language question, and the student's tool uses the LLM to provide a clear, concise answer based on the provided context.
+- Value: Saves time for managers and improves employee onboarding.
+
+#### 4 The "Explain This Like I'm Five" Tool for Legacy Systems
+
+- Problem: The company relies on a complex Excel sheet, a batch script, or an old piece of software that only one person understands.
+- Solution: The student takes the code/formulas and uses the LLM with a prompt like: "Explain what this Excel macro does in simple, step-by-step English. Then, document the potential risks if it fails." The output is used to create documentation.
+- Value: De-risks the business by creating crucial documentation and tribal knowledge.
+
+### Category C: Customer Service & Sales
+
+#### 5 Customer Inquiry Triage & Categorization
+
+- Problem: Customer support emails pour into a single inbox and are handled inconsistently.
+- Solution: The student builds a simple script where an email body can be pasted. The LLM analyzes it and returns a structured output (e.g., in JSON format) with: `{'category': 'Technical Support', 'urgency': 'High', 'summary': 'User cannot reset password on mobile app'}`.
+- Value: Ensures faster, more consistent routing of customer issues.
+
+#### 6 Automated Meeting Summary & Action Item Extraction
+
+- Problem: Important internal meetings happen, but nobody writes down the decisions and action items.
+- Solution: The student uses a simple speech-to-text tool (many are built into OSs now) to create a transcript of a meeting. This transcript is then fed to the LLM with a prompt like: "From this meeting transcript, extract a summary of the key decisions made and a list of action items, including the owner of each item."
+- Value: Dramatically improves accountability and follow-through.
+
+## Part 3: A Suggested Course Flow
+
+- Week 1-2: The Magic & The Prompt. Introduce LM Studio. Just play. The homework: "Make the AI tell you a joke. Now, make it explain that joke in the style of Shakespeare. Write down the exact prompts you used."
+- Week 3: Deeper Tinkering. Introduce Oobabooga. Explore models and parameters. The homework: "Find the 'character' extension and create a character. Have a conversation with it."
+- Week 4: The Unveiling. Enable the server. Introduce [Bruno](https://www.usebruno.com/)/Python requests. The homework: "Using the API, write a script that sends your name to the LLM and makes it write you a personalized horoscope."
+- Week 5: The Project Pitch. Students must choose a project from the list (or propose their own) and write a one-page proposal: The business problem, their proposed LLM-powered solution, and the expected value.
+- Week 6-10: The Build. Students work on their internship projects, holding weekly check-ins to share progress and roadblocks. The focus is on the prompt, the simple integration, and the documentation, not on building a complex app.
+- Final Week: The Showcase. Students present their projects to the class, explaining the business impact.
+
+## Resources
+
+- Managing expectations: [https://berthub.eu/articles/posts/an-ai-premortem/](https://berthub.eu/articles/posts/an-ai-premortem/)
+- Active community for asking questions: [https://old.reddit.com/r/LocalLLaMA/](https://old.reddit.com/r/LocalLLaMA/)
+- Gateway to advanced integration: [https://github.com/theroyallab/YALS](https://github.com/theroyallab/YALS)
+- Gateway to state of the art optimization: [https://huggingface.co/ubergarm/Qwen3-30B-A3B-Instruct-2507-GGUF](https://huggingface.co/ubergarm/Qwen3-30B-A3B-Instruct-2507-GGUF)
+- Here be dragons: [https://github.com/theroyallab/tabbyAPI/](https://github.com/theroyallab/tabbyAPI/)
