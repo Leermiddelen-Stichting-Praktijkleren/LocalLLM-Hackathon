@@ -12,6 +12,6 @@ Doelen:
 In dit project vind je de door de deelnemers aan de hackathon opgeleverde producten. 
 
 - In de map prompting vindt je twee presentataties die ontwikkeld zijn over prompting.
-- De presentatie Zelfd aan de slag met LLM is een voorbereiding op de Lessenreeks LLM.
+- De presentatie Zelf aan de slag met LLM is een voorbereiding op de Lessenreeks LLM.
 - De lessenreeks LLM is een opzet voor een lessenreeks waarbij de eerste vier lessen uitgewerkt zijn.
 - In de git omgeving [plijten/ai-hackaton](https://github.com/plijten/ai-hackaton) vind je een uitgewekte opdracht voor een moderne, gebruiksvriendelijke chatinterface in JavaScript die communiceert met een lokaal draaiend LLM.
