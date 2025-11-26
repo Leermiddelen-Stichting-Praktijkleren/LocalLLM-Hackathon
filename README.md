@@ -14,7 +14,7 @@ In dit project vind je de door de deelnemers aan de hackathon opgeleverde produc
 - In de map prompting vindt je twee presentaties die ontwikkeld zijn over prompting.
 - De presentatie Zelf aan de slag met LLM is een voorbereiding op de Lessenreeks LLM.
 - De lessenreeks LLM is een opzet voor een lessenreeks waarbij de eerste vier lessen uitgewerkt zijn.
-- In de git omgeving [plijten/ai-hackaton](https://github.com/plijten/ai-hackaton) vind je een uitgewekte opdracht voor een moderne, gebruiksvriendelijke chatinterface in JavaScript die communiceert met een lokaal draaiend LLM.
+- In de git omgeving [plijten/ai-hackaton](https://github.com/plijten/ai-hackaton) vind je een uitgewerkte opdracht voor een moderne, gebruiksvriendelijke chatinterface in JavaScript die communiceert met een lokaal draaiend LLM.
 
 De opbrengsten van de andere groepen vind je hier: https://github.com/Leermiddelen-Stichting-Praktijkleren/AI-Storingsdetective-Hackathon
 
